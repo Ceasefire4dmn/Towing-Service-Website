@@ -1,4 +1,4 @@
-/* ---------- Fonts ---------- */
+/* --------------- Fonts --------------- */
 @font-face {
   font-family: Inter;
   src: url(../fonts/Inter_18pt-Black.ttf);
@@ -35,9 +35,8 @@
   src: url(../fonts/Jost-Bold.ttf);
   font-weight: 700;
 }
-/*--------------------- Screen ---------------------*/
 
-/* -------------------- Globals -------------------- */
+/* --------------- Globals --------------- */
 a {
   color: inherit;
   text-decoration: none;
@@ -49,12 +48,15 @@ a {
   box-sizing: border-box;
 }
 
-/*--------------------- Sections -------------------*/
-
+/* ---------- Sections ---------- */
 .section {
   width: 100%;
   min-width: 1200px;
   padding: 70px 50px;
+}
+
+.section-blue {
+  background-color: #6a9cd5;
 }
 
 .content {
@@ -62,7 +64,7 @@ a {
   margin: auto;
 }
 
-/*--------------------- Text -------------------*/
+/* ---------- Text ---------- */
 .text-small {
   font-size: 16px;
   font-family: Inter;
@@ -81,18 +83,11 @@ a {
 
 .text-big-header {
   margin-bottom: 70px;
+  text-align: center;
 
   font-family: Jost;
   font-weight: 700;
   font-size: 50px;
-}
-
-.text-num {
-  color: #ffffff;
-  font-size: 70px;
-  font-weight: 900;
-  font-style: italic;
-  font-family: Inter;
 }
 
 .text-big-bold {
@@ -101,192 +96,211 @@ a {
   font-family: Inter;
 }
 
-/*-------------------- Grids -----------------------*/
-
-.grid-header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 215px 215px;
-  align-self: center;
+/* ---------- Layouts ---------- */
+.lt-flx-btw-cen {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.grid-services {
-  display: grid;
-  grid-template-columns: 280px 280px 280px;
-  grid-template-rows: 1fr;
-  margin: auto;
-  gap: 50px;
-}
-
-/*----------------------Btns------------------------*/
-
+/* ---------- Buttons ---------- */
 .btn {
+  height: fit-content;
+
   line-height: 50px;
   text-align: center;
 
   background-color: black;
 }
 
-/*-------------------- Nav-Menu ---------------------*/
-.nav-menu {
-  margin: auto;
+/* --------------- Header --------------- */
+/* ---------- Nav-Menu ---------- */
+nav.section {
+  padding: 15px 50px;
+}
+
+nav .content{
   width: 1100px;
 }
-.nav-span {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+nav span.lt-flx-btw-cen {
   gap: 5px;
 }
 
-.nav-section {
-  padding: 15px 50px;
-  background-color: #6a9cd5;
+/* ----- Contacts ----- */
+nav .contacts {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 30px;
 }
 
-.nav-menu .btn {
+/* ----- Contact Btn ----- */
+nav .btn {
   width: 225px;
   line-height: 40px;
 }
-.contacts {
-  display: inline-flex;
-  flex-direction: row;
-  gap: 90px;
-}
-/*------------------ Header -----------------------*/
 
-.header-btn {
-  width: 250px;
-  height: 50px;
-  grid-row: 2/3;
-  grid-column: 1/2;
-  margin-top: 76.31px;
+/* ---------- Header Block ---------- */
+.content-header {
+  width: 1100px;
+
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 135px;
 }
 
-.grid-header img {
-  grid-row: 1/3;
-  grid-column: 2/3;
-  margin-left: 80px;
+/* ----- Text ----- */
+.content-header span {
+  align-self: end;
 }
 
-.grid-header span {
-  grid-row: 1/2;
-  grid-column: 1/2;
-  margin-top: 15%;
+.content-header h1, h2, h3 {
+  font-family: Inter;
 }
 
-.grid-header h1 {
+.content-header h1, h2 {
+  font-weight: 900;
+}
+
+.content-header h1 {
   font-size: 65px;
   color: #6a9cd5;
-  font-weight: 900;
 }
 
-.grid-header h2 {
+.content-header h2 {
   font-size: 50px;
-  font-weight: 900;
 }
 
-.grid-header h3 {
+.content-header h3 {
   font-size: 30px;
   font-weight: 100;
   font-style: italic;
-  font-family: Inter;
-  grid-row: 2/3;
-  grid-column: 1/2;
 }
 
-/*------------ Section Services--------------*/
-/*------------- Block-1 --------------------*/
-
-.b-block {
-  position: relative;
-  grid-row: 1/2;
-  width: 280px;
-  height: 320px;
-  background-color: #6a9cd5;
-  align-content: center;
-  text-align: center;
-  z-index: 0;
-}
-
-.container {
-  display: block;
+/* ----- Image ----- */
+.content-header img {
+  grid-row: 1/3;
   grid-column: 2/3;
-  z-index: 1;
+  justify-self: end;
 }
 
-.container img {
-  margin-top: 20px;
+/* ----- Button ----- */
+.content-header .btn {
+  width: 250px;
+}
+
+/* --------------- Section 1 --------------- */
+.content-services {
+  width: 940px;
+
+  display: grid;
+  gap: 50px;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* ----- Service Cards ----- */
+.card-service {
+  width: 100%;
+  position: relative;
+  padding: 30px 0 70px 0;
+  
+  text-align: center;
+
+  background-color: #6a9cd5;
+}
+
+.card-service h3 {
+  margin-bottom: 20px;
+}
+
+.card-service img {
   margin-bottom: 15px;
 }
 
-.services-btn {
+.card-service .btn {
   width: 215px;
-  height: 50px;
-  margin: -80px auto;
-  grid-row: 2;
-  z-index: 1;
+  position: absolute;
+
+  left: 50%;
+  bottom: -20px;
+  transform: translate(-50%);
 }
 
-/*------------ Section Steps--------------*/
-/*--------------- Block-2 ---------------*/
-.steps-section {
-  background-color: #6a9cd5;
-}
-
-.container-steps {
-  display: flex;
-  justify-content: center;
+/* --------------- Section 2 --------------- */
+.content-steps {
+  display: grid;
   gap: 80px;
-  margin-bottom: 94px;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.cell {
-  display: flex;
+/* ----- Steps Cards ----- */
+.content-steps div {
+  width: 100%;
   gap: 15px;
+  display: flex;
 }
 
-.h3-steps {
+.content-steps span {
+  width: 48px;
+
+  font-size: 70px;
+  font-weight: 900;
+  font-style: italic;
+  font-family: Inter;
+  line-height: 60px;
+}
+
+.content-steps h3 {
   margin-top: 10px;
 }
 
-.num {
-  line-height: 64px;
+/* ----- Bottom Header ----- */
+.content-steps+.text-big-header {
+  margin: 90px 0 0 0;
 }
 
-/*-------------- Block-3 --------------*/
-
-.container-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* --------------- Section 3 --------------- */
+/* ----- Benefits Cards ----- */
+.content-benefits {
   text-align: center;
+
+  display: grid;
+  gap: 80px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.pluses-container {
-  display: flex;
-  gap: 90px;
-  justify-content: center;
+.content-benefits p {
+  width: 180px;
 }
 
-.container-item img {
+.content-benefits img {
   margin-bottom: 15px;
 }
 
-/*--------------- Footer ---------------*/
+/* --------------- Footer --------------- */
+footer.section {
+  margin-top: 30px;
+  padding: 40px 50px;
+}
 
-.footer-menu {
-  margin: auto;
+footer .content {
   width: 1100px;
 }
-.footer-span {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+footer .contacts {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+footer .lt-flx-btw-cen {
   gap: 5px;
 }
 
-.footer-menu .btn {
+footer .btn {
   width: 280px;
   line-height: 40px;
 }

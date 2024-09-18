@@ -7,191 +7,199 @@
     <link rel="stylesheet" href="./styles/moblie.css" />
     <title>Towing Service Website</title>
   </head>
+
   <body>
-    <!----------- Navigation --------- -->
+    <!-- --------------- Header --------------- -->
+    <header>
+      <!-- ---------- Nav-Menu ---------- -->
+      <nav class="section section-blue">
+        <div class="content lt-flx-btw-cen">
 
-    <section class="section nav-section">
-      <nav class="nav-menu nav-span">
-        <img class="nav-span logo" src="images\logo.svg" alt="Company's logo" />
-        <div class="contacts">
-          <span class="nav-span text-small">
-            <img class="icon" src="images\phone.svg" alt="Phone icon" />
-            <p>+7 (967) 310 66-66</p>
-          </span>
+          <!-- ----- Logo ----- -->
+          <img src="images/logo.svg" alt="Company's logo" />
 
-          <span class="nav-span text-small">
-            <img class="icon" src="images\mail.svg" alt="Mail icon" />
-            <p>asusmobile@icloud.com</p>
-          </span>
-        </div>
-        <a
-          class="btn text-middle text-light"
-          target="_blank"
-          href="tel:+79673106666"
-          >Вызвать эвакуатор</a
-        >
-      </nav>
-    </section>
+          <!-- ----- Contacts ----- -->
+          <div class="contacts text-small">
+            <span class="lt-flx-btw-cen">
+              <img src="images/phone-icon.svg" alt="Phone icon" />
+              <a href="tel:+79673106666">+7 (967) 310 66-66</a>
+            </span>
 
-    <!-- ----- Header ----- -->
-    <!-- ----- TODO: h3 переделать шрифт на 24 ----- -->
-    <header class="section">
-      <div class="content content-header">
-        <div class="grid-header">
-          <span>
-            <h1 class="header-h1 text-middle">Эвакуатор</h1>
-            <h2 class="header-h2 text-middle">В Новороссийске</h2>
-          </span>
+            <span class="lt-flx-btw-cen">
+              <img src="images/mail-icon.svg" alt="Mail icon" />
+              <a href="mailto:asusmobile@icloud.com">asusmobile@icloud.com</a>
+            </span>
+          </div>
 
-          <h3 class="header-h3">скорость бережность надежность</h3>
-
+          <!-- ----- Contact Btn ----- -->
           <a
-            class="btn header-btn text-light text-middle"
+            class="btn text-middle text-light"
             target="_blank"
-            href="tel:+79673106666"
+            href="https://api.whatsapp.com/send/?phone=79673106666&text&type=phone_number&app_absent=0"
+            >Вызвать эвакуатор
+          </a>
+        </div>
+      </nav>
+
+      <!-- ---------- Header Block ---------- -->
+      <div class="section">
+        <div class="content content-header">
+          <!-- ----- Text ----- -->
+          <span>
+            <h1>Эвакуатор</h1>
+            <h2>В Новороссийске</h2>
+            <h3>скорость бережность надежность</h3>
+          </span>
+
+          <!-- ----- Image ----- -->
+          <img src="images/main-photo.png" alt="Towing truck image" />
+
+          <!-- ----- Button ----- -->
+          <a
+            class="btn text-light text-middle"
+            target="_blank"
+            href="https://api.whatsapp.com/send/?phone=79673106666&text&type=phone_number&app_absent=0"
             >Вызвать эвакуатор</a
           >
-
-          <img src="images/main-photo.png" alt="Towing a car" />
         </div>
       </div>
     </header>
 
-    <!---------- Block 1 ---------->
-    <!------- TODO: ПОТОМ (мд) сделать вместо грида флекс ------->
+    <!-- --------------- Main --------------- -->
+    <main>
+      <!-- --------------- Section 1 --------------- -->
+      <section class="section">
+        <div class="content">
+          <!-- ----- Section Header ----- -->
+          <h2 class="text-big-header">ОКАЗЫВАЕМ ПОЛНЫЙ КОМПЛЕКС УСЛУГ</h2>
 
-    <section class="section">
-      <h1 class="text-big-header content">ОКАЗЫВАЕМ ПОЛНЫЙ КОМПЛЕКС УСЛУГ</h1>
+          <!-- ----- Service Cards ----- -->
+          <div class="content-services content text-light text-middle">
 
-      <div class="grid-services content">
-        <div class="b-block">
-          <div class="container">
-            <h3 class="text-light text-middle">Легковые</h3>
-            <img src="images\car.svg" alt="Car icon" />
-            <p class="text-light text-middle">от 1 500 руб.</p>
+            <div class="card-service">
+              <h3>Легковые</h3>
+              <img src="images\service-card-1.svg" alt="Car icon" />
+              <p>от 1 500 руб.</p>
+              
+              <a
+              class="btn"
+              target="_blank"
+              href="https://api.whatsapp.com/send/?phone=79673106666&text&type=phone_number&app_absent=0"
+              >Вызвать эвакуатор
+              </a>
+            </div>
+
+            <div class="card-service">
+              <h3>Микроавтобусы</h3>
+              <img src="images\service-card-2.svg" alt="Car icon" />
+              <p>от 2 500 руб.</p>
+              
+              <a
+              class="btn"
+              target="_blank"
+              href="https://api.whatsapp.com/send/?phone=79673106666&text&type=phone_number&app_absent=0"
+              >Вызвать эвакуатор
+              </a>
+            </div>
+
+            <div class="card-service">
+              <h3>Срочная эвакуация</h3>
+              <img src="images\service-card-3.svg" alt="Car icon" />
+              <p>от 3 500 руб.</p>
+              
+              <a
+              class="btn"
+              target="_blank"
+              href="https://api.whatsapp.com/send/?phone=79673106666&text&type=phone_number&app_absent=0"
+              >Вызвать эвакуатор
+              </a>
+            </div>
           </div>
         </div>
-        <div class="b-block">
-          <div class="container">
-            <h3 class="text-light text-middle">Микроавтобусы</h3>
-            <img src="images\minibus.svg" alt="Car icon" />
-            <p class="text-light text-middle">от 2 500 руб.</p>
+      </section>
+
+      <!-- --------------- Section 2 --------------- -->
+      <section class="section section-blue">
+        <div class="content">
+          <h2 class="text-big-header">ЧТО ДЕЛАТЬ ЕСЛИ ВЫ ПОПАЛИ В ДТП</h2>
+
+          <!-- ----- Steps Cards ----- -->
+          <div class="content content-steps">
+            <div class="card-step">
+              <span class="text-light">1</span>
+              <h3 class="text-big-bold">ВЫСТАВЬТЕ<br/>АВАРИЙНЫЙ<br/>ЗНАК</h3>
+            </div>
+
+            <div class="card-step">
+              <span class="text-light">2</span>
+              <h3 class="text-big-bold">ВЫЗОВИТЕ<br/>НАШ<br/>ЭВАКУАТОР</h3>
+            </div>
+
+            <div class="card-step">
+              <span class="text-light">3</span>
+              <h3 class="text-big-bold">ОПЛАТИТЕ<br/>СВОЙ<br/>ЗАКАЗ</h3>
+            </div>
+          </div>
+
+          <!-- ----- Bottom Header ----- -->
+          <p class="text-big-header text-light">ГЛАВНОЕ НЕ ПАНИКУЙТЕ!</p>
+        </div>
+      </section>
+
+      <!-- --------------- Section 3 --------------- -->
+      <section class="section">
+        <div class="content">
+          <h2 class="safe text-big-header">С НАМИ ВЫГОДНО И БЕЗОПАСНО</h2>
+
+          <!-- ----- Benefits Cards ----- -->
+          <div class="content content-benefits text-middle">
+            <div>
+              <img src="images\benefits-card-1.svg" alt="24/7 icon" />
+              <p>Наш эвакуаторы доступны 24/7 ежедневно</p>
+            </div>
+            <div>
+              <img src="images\benefits-card-2.svg" alt="24/7 icon" />
+              <p>С нами Ваше авто будет в полной безопасности</p>
+            </div>
+            <div>
+              <img src="images\benefits-card-3.svg" alt="24/7 icon" />
+              <p>У нас самые доступные цены в Новороссийске</p>
+            </div>
           </div>
         </div>
+      </section>
+    </main>
 
-        <div class="b-block">
-          <div class="container">
-            <h3 class="text-light text-middle">Срочная эвакуация</h3>
-            <img src="images\uping-car.svg" alt="Car icon" />
-            <p class="text-light text-middle">от 3 500 руб.</p>
-          </div>
-        </div>
+    <!-- --------------- Footer --------------- -->
+    <footer class="section section-blue">
+      <div class="content lt-flx-btw-cen">
 
-        <a
-          class="btn services-btn text-light text-middle"
-          target="_blank"
-          href="tel:+79673106666"
-          >Вызвать эвакуатор</a
-        >
-        <a
-          class="btn services-btn text-light text-middle"
-          target="_blank"
-          href="tel:+79673106666"
-          >Вызвать эвакуатор</a
-        >
-        <a
-          class="btn services-btn text-light text-middle"
-          target="_blank"
-          href="tel:+79673106666"
-          >Вызвать эвакуатор</a
-        >
-      </div>
-    </section>
-
-    <!----------- Block 2 ------------->
-
-    <section class="section steps-section">
-      <div class="content">
-        <h1 class="text-big-header content">ЧТО ДЕЛАТЬ ЕСЛИ ВЫ ПОПАЛИ В ДТП</h1>
-        <div class="container-steps">
-          <div class="cell">
-            <h2 class="num text-num">1</h2>
-            <h3 class="h3-steps text-step text-big-bold">
-              ВЫСТАВЬТЕ<br />АВАРИЙНЫЙ<br />ЗНАК
-            </h3>
-          </div>
-          <div class="cell">
-            <h2 class="num text-num">2</h2>
-            <h3 class="h3-steps text-step text-big-bold">
-              ВЫЗОВИТЕ<br />НАШ<br />ЭВАКУАТОР
-            </h3>
-          </div>
-          <div class="cell">
-            <h2 class="num text-num">3</h2>
-            <h3 class="h3-steps text-step text-big-bold">
-              ОПЛАТИТЕ<br />СВОЙ<br />ЗАКАЗ
-            </h3>
-          </div>
-        </div>
-      </div>
-      <h1 class="text-big-header content text-light h1-steps">
-        ГЛАВНОЕ НЕ ПАНИКУЙТЕ!
-      </h1>
-    </section>
-
-    <!------------- Block 3 ---------->
-
-    <!---TODO: сделать одинаковый размер картинок-->
-
-    <section class="section section-pluses">
-      <div class="content">
-        <h1 class="safe text-big-header">С НАМИ ВЫГОДНО И БЕЗОПАСНО</h1>
-        <div class="pluses-container">
-          <div class="container-item">
-            <img src="images/247.svg" alt="24/7 icon" />
-            <p class="text-middle">
-              Наш эвакуаторы<br />доступны 24/7<br />ежедневно
-            </p>
-          </div>
-          <div class="container-item">
-            <img src="images/safe.svg" alt="Guard and safe icon" />
-            <p class="text-middle">
-              С нами Ваше авто<br />будет в полной<br />безопасности
-            </p>
-          </div>
-          <div class="container-item">
-            <img src="images/money.svg" alt="Money icon" />
-            <p class="text-middle">
-              У нас самые<br />доступные цены<br />в Новороссийске
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="section nav-section">
-      <div class="footer-menu footer-span">
-        <span class="footer-span">
-          <img class="icon location" src="images\gps.svg" alt="Location icon" />
+        <!-- ----- Location ----- -->
+        <span class="lt-flx-btw-cen">
+          <img class="icon location" src="images/location-icon.svg" alt="Location icon" />
           <p class="text-middle">г. Новороссийск</p>
         </span>
-        <div class="contacts">
-          <span class="footer-span text-small">
-            <img class="icon" src="images\phone.svg" alt="Phone icon" />
-            <p>+7 (967) 310 66-66</p>
+
+        <!-- ----- Contacts ----- -->
+        <div class="contacts text-small">
+          <span class="lt-flx-btw-cen">
+            <img src="images/phone-icon.svg" alt="Phone icon" />
+            <a href="tel:+79673106666">+7 (967) 310 66-66</a>
           </span>
 
-          <span class="footer-span text-small">
-            <img class="icon" src="images\mail.svg" alt="Mail icon" />
-            <p>asusmobile@icloud.com</p>
+          <span class="lt-flx-btw-cen">
+            <img src="images/mail-icon.svg" alt="Mail icon" />
+            <a href="mailto:asusmobile@icloud.com">asusmobile@icloud.com</a>
           </span>
         </div>
+
+        <!-- ----- Contact Btn ----- -->
         <a
           class="btn text-middle text-light"
           target="_blank"
-          href="tel:+79673106666"
-          >Вызвать эвакуатор</a
-        >
+          href="https://api.whatsapp.com/send/?phone=79673106666&text&type=phone_number&app_absent=0"
+          >Вызвать эвакуатор
+        </a>
       </div>
     </footer>
   </body>
