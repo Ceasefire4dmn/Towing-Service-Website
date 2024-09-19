@@ -1,0 +1,187 @@
+@media (width <= 500px) {
+  /*--------------------- Sections -------------------*/
+
+  .section {
+    width: 100%;
+    min-width: 300px;
+    padding: 20px 10px;
+  }
+
+  /*--------------------- Text -------------------*/
+  .text-small {
+    font-size: 7px;
+  }
+
+  .text-middle {
+    font-size: 6px;
+  }
+
+  .text-big-header {
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+
+  .text-num {
+    font-size: 15px;
+  }
+
+  .text-big-bold {
+    font-size: 8px;
+  }
+
+  /*-------------------- Grids -----------------------*/
+
+  .grid-header {
+    grid-template-columns: 160px 120px;
+    grid-template-rows: 55px 55px;
+  }
+
+  .grid-services {
+    grid-template-columns: 70px 70px 70px;
+    gap: 10px;
+  }
+  /*----------------------Btns------------------------*/
+
+  .btn {
+    line-height: 20px;
+    font-size: 7px;
+  }
+
+  /*-------------------- Nav-Menu ---------------------*/
+
+  .nav-menu {
+    width: 280px;
+  }
+  .contacts {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2px;
+  }
+  .logo {
+    width: 89px;
+    height: 20px;
+  }
+  .icon {
+    width: 7px;
+    height: 7px;
+  }
+
+  .nav-menu .btn {
+    width: 80px;
+    line-height: 20px;
+  }
+  .nav-span {
+    gap: 2px;
+  }
+  .nav-section {
+    padding: 10px;
+  }
+
+  /*------------------ Header -----------------------*/
+  .header-btn {
+    width: 80px;
+    height: 20px;
+    margin-top: 24px;
+  }
+
+  .grid-header img {
+    width: 120px;
+    height: 110px;
+    margin-left: 0px;
+  }
+
+  .grid-header span {
+    margin-top: 7%;
+  }
+
+  .grid-header h1 {
+    font-size: 21px;
+  }
+
+  .grid-header h2 {
+    font-size: 15px;
+  }
+
+  .grid-header h3 {
+    font-size: 9px;
+  }
+
+  /*------------ Section Services--------------*/
+  /*------------- Block-1 --------------------*/
+
+  .b-block {
+    width: 70px;
+    height: 100px;
+  }
+
+  .container img {
+    width: 40px;
+    height: 40px;
+    margin-top: 6px;
+    margin-bottom: 0px;
+  }
+
+  .services-btn {
+    width: 60px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 5px;
+    margin: -20px auto;
+  }
+
+  /*------------ Section Steps--------------*/
+  /*--------------- Block-2 ---------------*/
+
+  .container-steps {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .cell {
+    gap: 5px;
+  }
+
+  .h3-steps {
+    margin-top: 9px;
+  }
+
+  .num {
+    line-height: 0px;
+    margin-top: 8px;
+  }
+
+  /*-------------- Block-3 --------------*/
+
+  .pluses-container {
+    gap: 50px;
+    margin-bottom: 20px;
+  }
+
+  .container-item img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+  }
+
+  .safe {
+    text-align: center;
+  }
+
+  /*--------------- Footer ---------------*/
+
+  .footer-menu {
+    width: 280px;
+  }
+  .footer-span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .footer-menu .btn {
+    width: 80px;
+    line-height: 20px;
+  }
+}
