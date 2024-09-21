@@ -1,7 +1,8 @@
 @media (width <= 500px) {
   /* ---------- Sections ---------- */
   .section {
-    min-width: 300px;
+    /* min-width: 300px; DO */
+    min-width: 100%; 
     padding: 30px 15px;
   }
 
@@ -33,7 +34,8 @@
   }
 
   nav .content {
-    width: 280px;
+    /* width: 280px; DO */
+    width: 100%;
   }
 
   nav span.lt-flx-btw-cen {
@@ -68,31 +70,44 @@
 
   /* ---------- Header Block ---------- */
   .content-header {
-    width: 280px;
+    /* width: 280px; DO */
+    width: 100%;
 
     gap: 10px;
     grid-template-columns: auto auto;
-    grid-template-rows: 1fr 31px;
+    /* grid-template-rows: 1fr 31px; DO */
+    grid-template-rows: auto auto;
   }
 
   /* ----- Text ----- */
 
   .content-header h1 {
-    font-size: 21px;
+    /* font-size: 21px; DO */
+    
+    font-size: clamp(21px, calc(21px + (28 - 21) * ((100vw - 300px) / (500 - 300))), 28px);
   }
 
   .content-header h2 {
-    font-size: 15px;
+    /* font-size: 15px; DO */
+
+    font-size: clamp(15px, calc(15px + (22 - 15) * ((100vw - 300px) / (500 - 300))), 22px);
+
   }
 
   .content-header h3 {
-    font-size: 9px;
+    /* font-size: 9px; DO */
+
+    font-size: clamp(9px, calc(9px + (16 - 9) * ((100vw - 300px) / (500 - 300))), 16px);
+
   }
 
   /* ----- Image ----- */
   .content-header img {
-    width: 120px;
-    height: 110px;
+    /* width: 120px; DO */
+    /* height: 100%; DO */
+
+    width: clamp(120px, 35.833vw + 8px, 470px);
+    height: clamp(110px, 33.333vw - 0.667px, 430px);
   }
 
   /* ----- Button ----- */
@@ -207,7 +222,8 @@
   }
 
   footer .content {
-    width: 280px;
+    /* width: 280px; DO */
+    width: 100%;
   }
 
   footer .contacts {
