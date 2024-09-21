@@ -2,7 +2,7 @@
   /* ---------- Sections ---------- */
   .section {
     min-width: 300px;
-    padding: 40px 10px;
+    padding: 30px 15px;
   }
 
   /* ---------- Text ---------- */
@@ -15,6 +15,7 @@
   .text-big-header {
     margin-bottom: 20px;
     font-size: 20px;
+    text-align: left;
   }
 
   .text-big-bold {
@@ -101,40 +102,132 @@
 
   /* --------------- Section 1 --------------- */
   .content-services {
-    width: 230px;
+    width: 110px;
 
-    gap: 10px;
+    gap: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 
-  h2.text-big-header{
+  h2.text-big-header {
     max-width: 280px;
   }
 
   /* ----- Service Cards ----- */
+
+  .text-middle.card-service {
+    font-size: 10px;
+  }
+
   .card-service {
-    padding: 11px 0 20px 0;
-    font-size: 5px;
+    padding: 10px 0 20px 0;
   }
 
   .card-service h3 {
-    margin-bottom: 6px;
-    font-size: 6px;
+    margin-bottom: 10px;
   }
 
   .card-service img {
     margin-bottom: 10px;
+    width: 80px;
+    height: 80px;
   }
 
   .card-service .btn {
-    width: 60px;
-
-    line-height: 15px;
-    bottom: -5px;
+    width: 80px;
+    /* origin width: 70px; and size: 6px */
+    line-height: 20px;
+    bottom: -10px;
   }
 
-  /* ----- Image ----- */
-  .card-service img{
-    width: 40px;
-    height: 40px;
+  /* --------------- Section 2 --------------- */
+  .content-steps {
+    width: 100%;
+
+    margin-left: 7px;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  /* ----- Steps Cards ----- */
+  .content-steps div {
+    gap: 5px;
+  }
+
+  .content-steps span {
+    width: 20px;
+
+    font-size: 32px;
+    line-height: 23px;
+  }
+
+  .content-steps h3 {
+    margin-top: 4px;
+  }
+
+  /* ----- Bottom Header ----- */
+  .content-steps + .text-big-header {
+    margin: 20px 0 0 0;
+    text-align: center;
+    font-size: 19px;
+  }
+
+  /* --------------- Section 3 --------------- */
+  /* ----- Benefits Cards ----- */
+  .content-benefits {
+    gap: 20px 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: left;
+  }
+
+  .content-benefits div {
+    display: flex;
+    align-items: center;
+  }
+
+  .content-benefits p {
+    display: inline-block;
+    width: 91px;
+    font-size: 10px;
+  }
+
+  .content-benefits img {
+    margin-right: 28px;
+    margin-bottom: 0;
+    width: 84px;
+    height: 94px;
+  }
+
+  /* --------------- Footer --------------- */
+  footer.section {
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  footer .content {
+    width: 280px;
+  }
+
+  footer .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  footer span img {
+    width: 7px;
+    height: 7px;
+  }
+
+  footer .lt-flx-btw-cen {
+    gap: 2px;
+  }
+
+  footer .btn {
+    width: 80px;
+    line-height: 20px;
   }
 }
