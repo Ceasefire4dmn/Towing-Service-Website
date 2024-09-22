@@ -130,7 +130,7 @@ nav span.lt-flx-btw-cen {
 /* ----- Contacts ----- */
 nav .contacts {
   display: inline-flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   gap: 30px;
 }
 
@@ -292,7 +292,6 @@ footer .content {
 
 footer .contacts {
   display: inline-flex;
-  flex-direction: row;
   gap: 30px;
 }
 
