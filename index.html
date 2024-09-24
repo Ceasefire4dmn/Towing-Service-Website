@@ -212,16 +212,18 @@
       sliderCardsBlock.lastElementChild.classList.remove('card-service-slider-anim-out');
       sliderCardsBlock.firstElementChild.classList.remove('card-service-slider-anim-in');
 
-      sliderCardsBlock.appendChild(sliderCardsBlock.firstElementChild);
-      sliderCardsBlock.lastElementChild.classList.add('card-service-slider-anim-out');
+      sliderCardsBlock.prepend(sliderCardsBlock.lastElementChild);
+      sliderCardsBlock.firstElementChild.classList.add('card-service-slider-anim-in');
+
+     
     });
 
     document.querySelector('#slider-btn-r').addEventListener('click', () => {
       sliderCardsBlock.lastElementChild.classList.remove('card-service-slider-anim-out');
       sliderCardsBlock.firstElementChild.classList.remove('card-service-slider-anim-in');
 
-      sliderCardsBlock.prepend(sliderCardsBlock.lastElementChild);
-      sliderCardsBlock.firstElementChild.classList.add('card-service-slider-anim-in');
+      sliderCardsBlock.appendChild(sliderCardsBlock.firstElementChild);
+      sliderCardsBlock.lastElementChild.classList.add('card-service-slider-anim-out');
     });
   </script>
 </html>
