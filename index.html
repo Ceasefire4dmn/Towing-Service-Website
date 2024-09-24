@@ -19,12 +19,12 @@
 
           <!-- ----- Contacts ----- -->
           <div class="contacts text-small">
-            <span class="lt-flx-btw-cen">
+            <span>
               <img src="images/phone-icon.svg" alt="Phone icon" />
               <a href="tel:+79673106666">+7 (967) 310 66-66</a>
             </span>
 
-            <span class="lt-flx-btw-cen">
+            <span>
               <img src="images/mail-icon.svg" alt="Mail icon" />
               <a href="mailto:asusmobile@icloud.com">asusmobile@icloud.com</a>
             </span>
@@ -73,9 +73,9 @@
           <h2 class="text-big-header">ОКАЗЫВАЕМ ПОЛНЫЙ КОМПЛЕКС УСЛУГ</h2>
 
           <!-- ----- Service Cards ----- -->
-          <div class="content-services content text-light text-middle">
-            <button class="button left-button"></button>
-            <div class="cards">
+          <div class="content-services-slider content text-light text-middle">
+            <button id="slider-btn-l"></button>
+            <div id="slider-cards">
               <div class="card-service">
                 <h3>Легковые</h3>
                 <img src="images\service-card-1.svg" alt="Car icon" />
@@ -115,7 +115,7 @@
                 </a>
               </div>
             </div>
-            <button class="button right-button"></button>
+            <button id="slider-btn-r"></button>
           </div>
         </div>
       </section>
@@ -127,17 +127,17 @@
 
           <!-- ----- Steps Cards ----- -->
           <div class="content content-steps">
-            <div class="card-step">
+            <div>
               <span class="text-light">1</span>
               <h3 class="text-big-bold">ВЫСТАВЬТЕ<br />АВАРИЙНЫЙ<br />ЗНАК</h3>
             </div>
 
-            <div class="card-step">
+            <div>
               <span class="text-light">2</span>
               <h3 class="text-big-bold">ВЫЗОВИТЕ<br />НАШ<br />ЭВАКУАТОР</h3>
             </div>
 
-            <div class="card-step">
+            <div>
               <span class="text-light">3</span>
               <h3 class="text-big-bold">ОПЛАТИТЕ<br />СВОЙ<br />ЗАКАЗ</h3>
             </div>
@@ -157,7 +157,7 @@
           <div class="content content-benefits text-middle">
             <div>
               <img src="images\benefits-card-1.svg" alt="24/7 icon" />
-              <p>Наши эвакуаторы доступны 24/7 ежедневно</p>
+              <p>Наш эвакуатор доступен 24/7 ежедневно</p>
             </div>
             <div>
               <img src="images\benefits-card-2.svg" alt="24/7 icon" />
@@ -176,19 +176,19 @@
     <footer class="section section-blue">
       <div class="content lt-flx-btw-cen">
         <!-- ----- Location ----- -->
-        <span class="lt-flx-btw-cen">
+        <span>
           <img src="images/location-icon.svg" alt="Location icon" />
           <p class="text-middle">г. Новороссийск</p>
         </span>
 
         <!-- ----- Contacts ----- -->
         <div class="contacts text-small">
-          <span class="lt-flx-btw-cen">
+          <span>
             <img src="images/phone-icon.svg" alt="Phone icon" />
             <a href="tel:+79673106666">+7 (967) 310 66-66</a>
           </span>
 
-          <span class="lt-flx-btw-cen">
+          <span>
             <img src="images/mail-icon.svg" alt="Mail icon" />
             <a href="mailto:asusmobile@icloud.com">asusmobile@icloud.com</a>
           </span>
@@ -204,4 +204,24 @@
       </div>
     </footer>
   </body>
+
+  <script>
+    const sliderCardsBlock = document.querySelector('#slider-cards');
+
+    document.querySelector('#slider-btn-l').addEventListener('click', () => {
+      sliderCardsBlock.lastElementChild.classList.remove('card-service-slider-anim-out');
+      sliderCardsBlock.firstElementChild.classList.remove('card-service-slider-anim-in');
+
+      sliderCardsBlock.appendChild(sliderCardsBlock.firstElementChild);
+      sliderCardsBlock.lastElementChild.classList.add('card-service-slider-anim-out');
+    });
+
+    document.querySelector('#slider-btn-r').addEventListener('click', () => {
+      sliderCardsBlock.lastElementChild.classList.remove('card-service-slider-anim-out');
+      sliderCardsBlock.firstElementChild.classList.remove('card-service-slider-anim-in');
+
+      sliderCardsBlock.prepend(sliderCardsBlock.lastElementChild);
+      sliderCardsBlock.firstElementChild.classList.add('card-service-slider-anim-in');
+    });
+  </script>
 </html>
