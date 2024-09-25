@@ -148,21 +148,11 @@ nav .btn {
 
   display: grid;
   gap: 40px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 135px;
 }
 
 /* ----- Text ----- */
 .content-header span {
   align-self: end;
-}
-
-.content-header h1, h2, h3 {
-  font-family: Inter;
-}
-
-.content-header h1, h2 {
-  font-weight: 900;
 }
 
 .content-header h1 {
@@ -175,7 +165,6 @@ nav .btn {
 }
 
 .content-header h3 {
-  font-size: 30px;
   font-weight: 100;
   font-style: italic;
 }
@@ -226,10 +215,6 @@ nav .btn {
 
 .card-service img {
   margin-bottom: 15px;
-}
-
-.card-service p {
-  font-size: inherit;
 }
 
 .card-service .btn {
