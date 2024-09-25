@@ -106,11 +106,28 @@ a {
 /* ---------- Buttons ---------- */
 .btn {
   height: fit-content;
-
+  position: relative;
+  
   line-height: 50px;
   text-align: center;
 
+  overflow:hidden;
   background-color: black;
+}
+
+.btn:hover:before {
+  right: 105%;
+}
+.btn:before{
+  content: "";
+  position: absolute;
+  height: 160px;
+  width: 50px;
+  background : rgb(255, 255, 255, 0.4);
+  right: -40px;
+  top: -40px;
+  transform: rotate(37deg);
+  transition: all .4s;
 }
 
 /* --------------- Header --------------- */
